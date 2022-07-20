@@ -5,8 +5,12 @@ int main (void)
 {
   int ret_code = 0;
   // we simply loop through the lower alphabet
-  for (char c = 'a'; (ret_code != EOF) && (c <= 'z'); c++)
+  for (char c = 'a'; (ret_code != EOF) && (c <= 'z'); c++){
     ret_code = putc (c, stdout);
+    putc('\n', stdout);
+    
+    }
+    
 //hello WORLD
 
   /* in case for whatever reason we got an EOF */
